@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" />
+
+    <title>Pãodaria</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- modelos de pães na lista e no carrinho -->
+    <div class="models">
+
+        <!-- pães na lista -->
+        <div class="pao-item">
+            <a href="">
+                <div class="pao-item--img"><img src="" /></div>
+                <div class="pao-item--add">+</div>
+            </a>
+            <div class="pao-item--price">R$ --</div>
+            <div class="pao-item--name">--</div>
+            <div class="pao-item--desc">--</div>
+        </div>
+
+        <!-- pao no carrinho -->
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- /models -->
+
+    <!-- .menu-openner aparecera no modo mobile -->
+    <header>
+        <nav class="nav-bar">
+        <div class="logo">
+            <h1><a href="home.html"><img id='img-logo' src="../PADARIA PROJETO/images/logo.png" alt="logo"></a></a></h1>
+        </div>
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+                <li class="nav-item"><a href="quemsomos.html" class="nav-link">Quem somos</a></li>
+                <li class="nav-item"><a href="contatos.html" class="nav-link"> Contatos</a></li>
+            </ul>
+        </div>
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+                </div>
+    </nav>
+        <div class="menu-openner"><span>0</span>🛒</div>
+</header>
+        
+ 
+    <!-- /menu-openner -->
+
+    <!-- conteudo principal -->
+    <main>
+        
+        <h2>Pães</h2>
+
+        <div class="pao-area"></div>
+    </main>
+    <!-- /conteudo principal -->
+
+    <!-- aside do carrinho -->
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h1>Seus Paes</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+    <!-- /aside do carrinho -->
+
+    <!-- janela modal .pãoWindowArea -->
+    <div class="paoWindowArea">
+        <div class="paoWindowBody">
+            <div class="paoInfo--cancelMobileButton">Voltar</div>
+            <div class="paoBig">
+                <img src="" />
+            </div>
+            <div class="paoInfo">
+                <h1>--</h1>
+                <div class="paoInfo--desc">--</div>
+                <div class="paoInfo--sizearea">
+                    <div class="paoInfo--sector"></div>
+                    <div class="paoInfo--sizes">
+                        <div data-key="P" class="paoInfo--size"> <span>--</span></div>
+                        <div data-key="M" class="paoInfo--size"> <span>--</span></div>
+                        <div data-key="G" class="paoInfo--size selected"><span>--</span></div>
+                    </div>
+                </div>
+                <div class="paoInfo--pricearea">
+                    <div class="paoInfo--sector">Preço</div>
+                    <div class="paoInfo--price">
+                        <div class="paoInfo--actualPrice">R$ --</div>
+                        <div class="paoInfo--qtarea">
+                            <button class="paoInfo--qtmenos">-</button>
+                            <div class="paoInfo--qt">1</div>
+                            <button class="paoInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="paoInfo--addButton">Adicionar ao carrinho</div>
+                <div class="paoInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+    <!-- /janela modal .paoWindowArea -->
+    
+
+    <!-- Rodapé-->
+    <div>
+        <footer>
+
+
+
+
+
+        </footer>
+    </div>
+   
+    
+
+
+    <script src="padaria.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+
+    
+    
+</body>
+</html>
